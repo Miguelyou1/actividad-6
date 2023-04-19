@@ -18,3 +18,5 @@ var Numero1 = parseInt(prompt("Introduzca el primer número:"));
 var Numero2 = parseInt(prompt("Introduzca el segundo número:"));
 console.log("La suma es " + sumar(Numero1, Numero2));
 console.log("La resta es " + restar(Numero1, Numero2));
+console.log("La multiplicación es " + multiplicar(Numero1, Numero2));
+console.log("La división es " + dividir(Numero1, Numero2));
