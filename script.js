@@ -14,3 +14,7 @@ function dividir(a, b) {
     }
     return a / b;
 }
+var Numero1 = parseInt(prompt("Introduzca el primer número:"));
+var Numero2 = parseInt(prompt("Introduzca el segundo número:"));
+console.log("La suma es " + sumar(Numero1, Numero2));
+console.log("La resta es " + restar(Numero1, Numero2));
