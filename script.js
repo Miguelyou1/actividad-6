@@ -7,3 +7,10 @@ function restar(a, b) {
 function multiplicar(a, b) {
     return a * b;
 }
+function dividir(a, b) {
+    if (b === 0) {
+        console.log("No se puede dividir por cero ");
+        return;
+    }
+    return a / b;
+}
