@@ -10,3 +10,7 @@ function restar(a, b) {
 function multiplicar(a, b) {
     console.log(a * b);
 }
+// Función para dividir dos números
+function dividir(a, b) {
+    console.log(a / b);
+  }
