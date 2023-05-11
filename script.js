@@ -1,3 +1,5 @@
+function pedirNumero() {
+    const numero = prompt('Introduzca un número');
 // Función para sumar dos números
 function sumar(a, b) {
     console.log(a + b);
