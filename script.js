@@ -1,35 +1,30 @@
-console.log("a continuación podrás escribir dos números para poderlos sumar, restar, multiplicar o dividir");
-console.log("escriba el primer número");
-let primernum = prompt();
-let num1 = parseInt(primernum);
-console.log("escriba el seguno número");
-let segundonum = prompt();
-let num2 = parseInt(segundonum);
+const num1 = parseInt(prompt("Introduce un número "));
+const num2 = parseInt(prompt("Introduce otro número"));
 
-suma(num1, num2);
-function suma(suma1, suma2) {
-    let resultado = suma1 + suma2;
-    console.log("la suma de " + suma1 + " y " + suma2 + " es: " + resultado);
-    return resultado;
+function sumar(a, b) {
+  return a + b;
 }
 
-resta(num1, num2);
-function resta(minuendo, sustraendo) {
-    let resultado = minuendo - sustraendo;
-    console.log("la resta de " + minuendo + " y " + sustraendo + " es: " + resultado);
-    return resultado;
+function restar(a, b) {
+  return a - b;
 }
 
-producto(num1, num2);
-function producto(Fact1, Fact2) {
-    let resultado = Fact1 * Fact2;
-    console.log("la multiplicación de " + Fact1 + " y " + Fact2 + " es: " + resultado);
-    return resultado;
+function multiplicar(a, b) {
+  return a * b;
 }
 
-division(num1, num2);
-function division(Divi, div) {
-    let resultado = Divi / div;
-    console.log("la división de " + Divi + " y " + div + " es: " + resultado);
-    return resultado;
+function dividir(a, b) {
+  if (b !== 0) {
+    return a / b;
+  } else {
+    console.log("No se puede dividir entre cero.");
+  }
 }
+
+const numeroConvertido1 = Number(num1);
+const numeroConvertido2 = Number(num2);
+
+alert(`La suma de ${numeroConvertido1} y ${numeroConvertido2} es ${sumar(numeroConvertido1, numeroConvertido2)}`);
+alert(`La resta de ${numeroConvertido1} y ${numeroConvertido2} es ${restar(numeroConvertido1, numeroConvertido2)}`);
+alert(`La multiplicación de ${numeroConvertido1} y ${numeroConvertido2} es ${multiplicar(numeroConvertido1, numeroConvertido2)}`);
+alert(`La división de ${numeroConvertido1} y ${numeroConvertido2} es ${dividir(numeroConvertido1, numeroConvertido2)}`);
